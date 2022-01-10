@@ -18,11 +18,14 @@ class Main{
         t = Character.toUpperCase(t);
 
         // 2.
-        for (int i=0; i<str.length(); i++) {
-            if(str.charAt(i) == t)	answer++;
+//        for (int i=0; i<str.length(); i++) {
+//            if(str.charAt(i) == t)	answer++;
+//        }
+        for (char x : str.toCharArray()) {
+        	if(x == t)	answer++;
         }
 
-        System.out.println(answer);
+        //System.out.println(answer);
         return answer;
     }
 
