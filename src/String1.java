@@ -9,7 +9,7 @@ import java.util.*;
  *
  */
 
-class String1{
+class String1{ 
     public int solution(String str, char t){
         int answer=0;
 
