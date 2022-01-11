@@ -18,11 +18,21 @@ class String2{
         // 1.
         for (char x : str.toCharArray()) {
         	
-        	// 2.
+        	// 2-(1)
         	if(Character.isLowerCase(x)) 	answer += Character.toUpperCase(x);
         	else  	answer += Character.toLowerCase(x);
+        	
+        	//2-(2) 아스키 코드 65~90: 대문자, 97~122: 소문자
+        	if(x>=97 && x<=122) 	answer += (char)(x-32);
+        	else  	answer += (char)(x+32);
+//        	if(Character.isLowerCase(x)) 	answer += Character.toUpperCase(x);
+//        	else  	answer += Character.toLowerCase(x);
+        	
+        	//2-(2) 아스키 코드 65~90: 대문자, 97~122: 소문자
+        	if(x>=97 && x<=122) 	answer += (char)(x-32);
+        	else  	answer += (char)(x+32);
         }
-
+ 
 		return answer;
     }
 
