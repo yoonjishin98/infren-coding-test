@@ -3,8 +3,8 @@ import java.util.Scanner;
 /**
  * 
  * 1. p = 1000
- * 2. ¿ÞÂÊÀ¸·ÎºÎÅÍ: ¹®ÀÚ¿­ÀÇ °¢ ¾ËÆÄºªÀÌ target°ú °°Àº¸é 0, ´Ù¸£¸é answer¿¡ p++ °ª »ðÀÔ
- * 3. ¿À¸¥ÂÊÀ¸·ÎºÎÅÍ: ¹®ÀÚ¿­ÀÇ °¢ ¾ËÆÄºªÀÌ target°ú °°Àº¸é 0, ´Ù¸£°í answer °ªº¸´Ù ÀÛÀ¸¸é p++ °ªÀ¸·Î ´ëÃ¼
+ * 2. ì™¼ìª½ìœ¼ë¡œë¶€í„°: ë¬¸ìžì—´ê³¼ íƒ€ê²Ÿê°’ì´ ê°™ìœ¼ë©´ p=0 + answerì— pê°’ ì‚½ìž…, ë‹¤ë¥´ë©´ p++ + answerì— pê°’ ì‚½ìž…
+ * 3. ì˜¤ë¥¸ìª½ìœ¼ë¡œë¶€í„°: ë¬¸ìžì—´ê³¼ íƒ€ê²Ÿê°’ì´ ê°™ìœ¼ë©´ p=0, ë‹¤ë¥´ê³  + answerì˜ ê°’ì´ pë³´ë‹¤ ìž‘ìœ¼ë©´ p++ + answerì— pê°’ ì‚½ìž…
  * 
  */ 
  
