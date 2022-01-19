@@ -3,7 +3,7 @@
 public class DFS4 {
 	static int[] fibo;
 	public int DFS(int n) {
-		if(fibo[n]>0)	return fibo[n];		// 메모리제이션: 가장 효율적
+		if(fibo[n]>0)	return fibo[n];		// 메모이제이션: 가장 효율적
 		if(n==1)	return fibo[n]=1;
 		else if(n==2)	return fibo[n]=1;
 		else return fibo[n]=DFS(n-2)+DFS(n-1);
