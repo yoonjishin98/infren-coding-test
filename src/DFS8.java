@@ -16,7 +16,7 @@ public class DFS8 {
 			}
 		}
 	}
-	
+	 
 	public static void main (String[] args) {
 		DFS8 T = new DFS8();
 		Scanner scan = new Scanner(System.in);
