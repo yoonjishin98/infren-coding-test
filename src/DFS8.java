@@ -1,5 +1,7 @@
 import java.util.*;
 
+// 인접행렬은 정점의 개수가 커지면 매우 비효율적이게 됨. 
+// 그럴 때 사용하는게 인접리스트를 이용한 풀이
 public class DFS8 {
 	static int n, m, answer = 0;
 	static int[][] graph;
