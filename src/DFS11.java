@@ -7,6 +7,7 @@ public class DFS11 {
 	
 	public void DFS(int L, int sum, int[] arr) {
 		if(flag)	return;
+		if(sum>total/2)	return;
 		if(L==n) {	
 			if((total-sum)==sum){
 				answer = "YES";
@@ -25,6 +26,7 @@ public class DFS11 {
 		int[] arr = new int[n];
 		for(int i=0; i<n; i++) {
 			arr[i] = scan.nextInt();
+			total += arr[i];
 		}
 		T.DFS(0, 0, arr);
 		System.out.println(answer);
