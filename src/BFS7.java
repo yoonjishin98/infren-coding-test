@@ -14,11 +14,11 @@ public class BFS7 {
 	static int[][] board, date;
 	static int[] dx = {-1,0,1,0};
 	static int[] dy = {0,-1,0,1};
-	static Queue<Point> q = new LinkedList<>();
+	static Queue<Point2> q = new LinkedList<>();
 	
 	static void BFS() {
 		while(!q.isEmpty()) {
-			Point tmp = q.poll();
+			Point2 tmp = q.poll();
 			
 			for(int i=0;i<4;i++) {
 				int nx = tmp.x + dx[i];
@@ -26,7 +26,7 @@ public class BFS7 {
 				
 				if(nx>=0 && nx<n && ny>=0 && ny<m && board[nx][ny]==0) {	//이해안감
 					board[nx][ny] = 1;
-					q.offer(new Point(nx,ny));
+					q.offer(new Point2(nx,ny));
 					date[nx][ny] = date[tmp.x][tmp.y]+1;
 				}
 			}
@@ -44,7 +44,7 @@ public class BFS7 {
 			for(int j=0;j<m;j++) {
 				board[i][j] = scan.nextInt(); 
 				if(board[i][j]==1)
-					q.offer(new Point(i,j));	//익은 토마토일 경우(시작점)
+					q.offer(new Point2(i,j));	
 			}
 		}
 		T.BFS();
@@ -52,9 +52,9 @@ public class BFS7 {
 		boolean flag = true;
 		int answer = Integer.MIN_VALUE;
 		for(int i=0; i<n; i++) {
-			for(int j=0; j<m; j++) {	// 익지 않은 토마토 있음
-				if(board[i][j]==0)
-					flag = false;
+			for(int j=0; j<m; j++) {	
+				if(board[i][j]==0)	// 익지 않은 토마토 있음
+					flag = false;	
 			}
 		}
 		
