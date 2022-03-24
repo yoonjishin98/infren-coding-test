@@ -28,7 +28,7 @@ public class HashMap3 {
 		int n = scan.nextInt();
 		int k = scan.nextInt();
 		int[] arr = new int[n];
-		for(int i=0; i<k; i++) {
+		for(int i=0; i<n; i++) {
 			arr[i] = scan.nextInt();
 		}
 		
